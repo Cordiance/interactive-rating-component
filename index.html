@@ -1,49 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
 
+  <!-- Style -->
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Interactive rating component</title>
+  <link rel="stylesheet" href="style.css">
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <title>Frontend Mentor | Interactive rating component</title>
 </head>
+
 <body>
 
   <!-- Rating state start -->
-
-  How did we do?
-
-  Please let us know how we did with your support request. All feedback is appreciated 
-  to help us improve our offering!
-
-  1 2 3 4 5
-
-  Submit
-
+  <main class="rating-card">
+    <div class="circle"><img src="/images/icon-star.svg" alt="Star"></div>
+    <h1>How did we do?</h1>
+    <p>
+      Please let us know how we did with your support request. All feedback is appreciated
+      to help us improve our offering!
+    </p>
+    <!-- Rating radio buttons-->
+    <div class="rate">
+      <input class="radio-btn" type="radio" id="star1" name="rate" value="1"></input>
+      <label class="circle btn" for="star1" title="text">1</label>
+      <input class="radio-btn" type="radio" id="star2" name="rate" value="2"></input>
+      <label class="circle btn" for="star2" title="text">2</label>
+      <input class="radio-btn" type="radio" id="star3" name="rate" value="3"></input>
+      <label class="circle btn" for="star3" title="text">3</label>
+      <input class="radio-btn" type="radio" id="star4" name="rate" value="4"></input>
+      <label class="circle btn" for="star4" title="text">4</label>
+      <input class="radio-btn" type="radio" id="star5" name="rate" value="5"></input>
+      <label class="circle btn" for="star5" title="text">5</label>
+    </div>
+    <!-- Submit button -->
+    <button class="submit-btn">Submit</button>
+  </main>
   <!-- Rating state end -->
 
   <!-- Thank you state start -->
 
-  You selected <!-- Add rating here --> out of 5
+  You selected
+  <!-- Add rating here --> out of 5
 
   Thank you!
 
-  We appreciate you taking the time to give a rating. If you ever need more support, 
+  We appreciate you taking the time to give a rating. If you ever need more support,
   don’t hesitate to get in touch!
 
   <!-- Thank you state end -->
 
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+
+  <footer>
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="https://github.com/Cordiance">Cordiance</a>.
+    </div>
+  </footer>
+
 </body>
+
 </html>

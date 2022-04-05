@@ -1,0 +1,113 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&family=Overpass:wght@400;700&display=swap");
+body {
+  font-family: 'Overpass', sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  text-align: left;
+  margin: 20vh auto;
+  background-color: #121417;
+}
+
+body .rating-card {
+  width: 350px;
+  height: 360px;
+  margin: 20px auto;
+  padding: 30px;
+  border-radius: 20px;
+  background-color: #252d37;
+  background: -webkit-gradient(linear, left top, left bottom, from(#252d37), to(rgba(27, 30, 34, 0.4)));
+  background: linear-gradient(180deg, #252d37 0%, rgba(27, 30, 34, 0.4) 100%);
+}
+
+body .rating-card .circle {
+  color: #959eac;
+  font-weight: 700;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 100%;
+  background-color: rgba(124, 135, 152, 0.1);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body .rating-card .circle img {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body .rating-card .circle.btn:hover {
+  color: white;
+  background-color: #959eac;
+  -webkit-transition: color 0.5s ease-in, background-color 0.5s ease-in;
+  transition: color 0.5s ease-in, background-color 0.5s ease-in;
+}
+
+body .rating-card .radio-btn:checked + label {
+  color: white;
+  background-color: #fb7413;
+  pointer-events: none;
+}
+
+body .rating-card h1 {
+  font-size: 1.6rem;
+  color: white;
+  margin-top: 2rem;
+}
+
+body .rating-card p {
+  line-height: 1.5rem;
+  color: #959eac;
+  font-size: 15px;
+  margin-bottom: 2rem;
+}
+
+body .rating-card .rate {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+body .rating-card .radio-btn {
+  display: none;
+}
+
+body .rating-card .submit-btn {
+  color: white;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 0.2rem;
+  width: 100%;
+  height: 3rem;
+  margin: 2rem auto;
+  background-color: #fb7413;
+  border-radius: 2rem;
+  border: none;
+}
+
+body .rating-card .submit-btn:hover {
+  color: #fb7413;
+  background-color: white;
+  -webkit-transition: color 0.5s ease-in, background-color 0.5s ease-in;
+  transition: color 0.5s ease-in, background-color 0.5s ease-in;
+}
+
+body .attribution {
+  color: #959eac;
+  font-size: 0.8rem;
+  text-align: center;
+}
+
+body .attribution a {
+  color: #3e52a3;
+}
+/*# sourceMappingURL=style.css.map */
