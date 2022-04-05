@@ -16,10 +16,10 @@ body {
     background-color: $verydarkblue;
 
     .rating-card {
-        width: 350px;
-        height: 360px;
+        width: 340px;
+        height: 375px;
         margin: 20px auto;
-        padding: 30px;
+        padding: 2rem 2rem 0.5rem;
         border-radius: 20px;
         background-color: $darkblue;
         background: linear-gradient(180deg, hsl(213, 20%, 18%) 0%, hsla(216, 12%, 12%, 0.4) 100%);
@@ -63,7 +63,7 @@ body {
             line-height: 1.5rem;
             color: $lightgrey;
             font-size: 15px;
-            margin-bottom: 2rem;
+            margin-bottom: 1.5rem;
         }
 
         .rate {
@@ -93,6 +93,40 @@ body {
             background-color: $white;
             transition: color 0.5s ease-in, background-color 0.5s ease-in;
         }
+    }
+
+    .rating-card.voted.hidden {
+        display: none;
+    }
+
+    .rating-card.hidden {
+        display: none;
+    }
+
+    .rating-card.voted {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+
+        img {}
+
+        .selected {
+            border-radius: 20px;
+            background-color: hsla(216, 12%, 54%, 0.1);
+            color: $orange;
+            margin: 3rem auto;
+            margin-bottom: 2rem;
+            padding: 0.4rem 1rem;
+        }
+
+        h1 {
+            margin: 0rem;
+        }
+
+        p {
+            text-align: center;
+        }
+
     }
 
     .attribution {

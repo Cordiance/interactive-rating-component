@@ -9,10 +9,10 @@ body {
 }
 
 body .rating-card {
-  width: 350px;
-  height: 360px;
+  width: 340px;
+  height: 375px;
   margin: 20px auto;
-  padding: 30px;
+  padding: 2rem 2rem 0.5rem;
   border-radius: 20px;
   background-color: #252d37;
   background: -webkit-gradient(linear, left top, left bottom, from(#252d37), to(rgba(27, 30, 34, 0.4)));
@@ -66,7 +66,7 @@ body .rating-card p {
   line-height: 1.5rem;
   color: #959eac;
   font-size: 15px;
-  margin-bottom: 2rem;
+  margin-bottom: 1.5rem;
 }
 
 body .rating-card .rate {
@@ -99,6 +99,44 @@ body .rating-card .submit-btn:hover {
   background-color: white;
   -webkit-transition: color 0.5s ease-in, background-color 0.5s ease-in;
   transition: color 0.5s ease-in, background-color 0.5s ease-in;
+}
+
+body .rating-card.voted.hidden {
+  display: none;
+}
+
+body .rating-card.hidden {
+  display: none;
+}
+
+body .rating-card.voted {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+body .rating-card.voted .selected {
+  border-radius: 20px;
+  background-color: rgba(124, 135, 152, 0.1);
+  color: #fb7413;
+  margin: 3rem auto;
+  margin-bottom: 2rem;
+  padding: 0.4rem 1rem;
+}
+
+body .rating-card.voted h1 {
+  margin: 0rem;
+}
+
+body .rating-card.voted p {
+  text-align: center;
 }
 
 body .attribution {
