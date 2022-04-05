@@ -43,16 +43,18 @@
 
   <!-- Thank you state start -->
 
-  You selected
-  <!-- Add rating here --> out of 5
-
-  Thank you!
-
-  We appreciate you taking the time to give a rating. If you ever need more support,
-  don’t hesitate to get in touch!
+  <div class="rating-card voted hidden">
+    <img src="/images/illustration-thank-you.svg" alt="Smartphone">
+    <!-- Add rating here -->
+    <div class="selected">You selected out <span class="choice"></span> of 5</div>
+    <h1>Thank you!</h1>
+    <p>
+      We appreciate you taking the time to give a rating. If you ever need more support,
+      don&#8217;t hesitate to get in touch!
+    </p>
+  </div>
 
   <!-- Thank you state end -->
-
 
   <footer>
     <div class="attribution">
@@ -60,6 +62,33 @@
       Coded by <a href="https://github.com/Cordiance">Cordiance</a>.
     </div>
   </footer>
+
+  <script>
+    'use strict'
+    const sectionRates = document.querySelector(".rating-card");
+    const ratingBtn = document.querySelectorAll(".circle.btn");
+    const submitBtn = document.querySelector(".submit-btn");
+    const choice = document.querySelector(".choice");
+    const sectionHidden = document.querySelector(".rating-card.hidden");
+
+    let btn = 0;
+    ratingBtn.forEach(el => {
+      el.addEventListener('click', function () {
+        btn = this.innerText;
+      });
+    });
+
+    submitBtn.addEventListener('click', function () {
+      if (btn === 0) {
+        alert('Please rate before sumbit!');
+      } else {
+        choice.textContent = btn;
+        sectionRates.classList.add('hidden');
+        sectionHidden.classList.remove('hidden');
+      }
+    });
+
+  </script>
 
 </body>
 
